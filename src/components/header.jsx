@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 const Header = () => {
     const [imageIndex, setImageIndex] = useState((0));
