@@ -6,19 +6,27 @@ const Footer = () => {
         <div className="f-wrapper">
             <div className="f-container">
                 <div className="contact">
-                    <span className='primaryText'>Contactez nous:</span><br />
-                    <span className='secondaryText'>Adresse : 123 rue de france</span>
-                    <span className='secondaryText'>Téléphone : +2322333</span>
-                    <span className='secondaryText'>Email : ...@gmail.com</span>
+                    <p className='primaryText'>Contactez nous:</p><br />
+                    <div className='ads'>
+                        <img src="./icons8-adresse-80.png" alt="" />
+                        <p className='secondaryText'> lot 25 plle 85 morafeno</p>
+                    </div >
+                    <div className='ads'>
+                        <img src="./icons8-e-mail-48.png" alt="" />
+                        <p className='secondaryText'>Liebeaupair@gmail.com</p>
+                    </div>
+                    <div className='ads'>
+                        <img src="./icons8-téléphone-48.png" alt="" />
+                        <p className='secondaryText'>+491728134483</p>
+                    </div>
                      
                 </div>
                 <div className="img-lien">
-                    <span className='primaryText'>Suivez-nous</span>
-                    <div className="img-log">
-                        <img src="./fb.png" alt="" />
-                        <img src="./tw.png" alt="" />
-                        
-                    </div>
+                    <span className='primaryText'>Suivez-nous :</span>
+                    <a href="https://www.facebook.com/dinasolorachelle.lovamamy" target="_blank" rel="noopener noreferrer">
+                        <img src="./fb.png" alt="Facebook" />
+                    </a>
+                    
                 </div>
             </div>
         </div>

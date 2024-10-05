@@ -7,38 +7,86 @@
     justify-content: flex-end;
     margin-bottom: 0%;
     
+    
+    /* Styles spécifiques au footer */
+    .f-container {
+        background-color: #333;
+        color: #fff;
+        text-align: left;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .primaryText {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .secondaryText {
+            display: block;
+            margin-top: 5px;
+            color: #ccc;
+        }
+
+        .contact{
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            .ads{
+                display: flex;
+                align-items: center;
+                margin-left: 1rem;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+
+                p{
+                    line-height: 1.5rem;
+                }
+            }
+
+            
+        }
+
+        .img-lien{
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+            justify-content: center;
+            a{
+
+                img{
+                    width: 30px;
+                    margin: 0 10px;
+                    height: 30px;
+                }
+            }
+
+        }
+        
+    }
 }
 
-/* Styles spécifiques au footer */
-.f-container {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@media (max-width: 450px) {
+    .f-container {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
-.contact, .img-lien {
-    padding: 10px;
-}
+      .contact{
+        margin-bottom: 0.5rem;
+      }
 
-.img-log img {
-    width: 30px;
-    margin: 0 10px;
-}
-
-.primaryText {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.secondaryText {
-    display: block;
-    margin-top: 5px;
-    color: #ccc;
-}
+      .img-lien{
+        display: flex;
+        margin-left: 2rem;
+      }
+    }
+  }
 
 .n-wrapper{
     background-color: #4e73b7;
